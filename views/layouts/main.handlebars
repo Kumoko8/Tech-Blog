@@ -7,17 +7,27 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li> <a>Home</a></li>
-            <li> <a>Dashboard</a></li>
-            <li> <a>Login</a></li>
-            {{#if loggedIn}}
-            <li> <a>Logout</a></li>
+        <nav>
+            <ul>
+                <li> <a href="/">Home</a></li>
+                <li> <a href="/dashboard">Dashboard</a></li>
+             {{#if loggedIn}}
+                <li> <button id="logout"> Logout </button> </li>
+                {{else}}
+                <li> <a href="/login">Login</a></li>
             {{/if}}
-    </ul>
+            </ul>
+        </nav>
+        
     </header>
+    <section>
+
+    </section>
 {{{body}}}
     <footer></footer>
     
 </body>
+{{#if loggedIn}}
+<script src="/Tech-Blog/public/js/logout.js"></script>
+{{/if}}
 </html>

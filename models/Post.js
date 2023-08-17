@@ -15,9 +15,16 @@ Painting.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
- 
-    description: {
+    author: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    content: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    created_on: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     user_id: {
@@ -25,6 +32,8 @@ Painting.init(
       references: {
         model: 'user',
         key: 'id',
+        //we want the date to display next to the user_name
+        //Can we have a search for the user id and display the name?
       },
     },
   },

@@ -1,12 +1,14 @@
 <h1> The Tech Blog</h1>
 {{#each posts as |post|}}
+<a href="/comment">
 <section>
     <section>
 <h2>{{post.title}}</h2>
     </section>
-        <p>Posted by: {{post.author}} on {{post.created_on}}</p>
     <section>
-        <p> {{post.description}}</p>
+        <p> {{post.content}}</p>
     </section>
+        <p>{{post.author}} , {{post.created_on}}</p>
 </section>
+</a>
 {{/each}}

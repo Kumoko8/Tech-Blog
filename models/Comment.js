@@ -15,28 +15,17 @@ Painting.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    artist: {
+    author: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    exhibition_date: {
+    content: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    comment_date: {
       type: DataTypes.DATE,
       allowNull: false,
-    },
-    filename: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    post_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'post',
-        key: 'id',
-      },
     },
     user_id: {
         type: DataTypes.INTEGER,
