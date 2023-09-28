@@ -1,16 +1,17 @@
 <section>
-<label> Sign Up </label>
-<form action="/submit_form">
-    <section>
-        <label> Username </label>
-        <input type="username" placeholder="Enter username here">
-    </section>
-    <section>
- <label for="password-login"> Password </label>
-    <input type="password" placeholder="Enter password here" autocomplete="off">
-    </section>
-   
-    <button type="submit">Sign Up</button>
-    <a href="/login">Log in here instead</a>
-</form>
+    <label> Sign Up </label>
+    <form id="sign-up">
+        <section>
+            <label> Username </label>
+            <input id="username-signup" type="username" placeholder="Enter username here">
+        </section>
+        <section>
+            <label> Password </label>
+            <input id="password-signup" type="password" placeholder="Enter password here" autocomplete="off">
+        </section>
+
+        <button type="submit">Sign Up</button>
+        <a href="/login">Log in here instead</a>
+    </form>
 </section>
+<script src="/js/signup.js"></script>

@@ -23,10 +23,6 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    created_on: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {

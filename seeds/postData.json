@@ -3,22 +3,19 @@
     "title": "Animation",
     "author": "Sal",
     "content": "Apps that contain animatioin",
-    "created_on": "date",
     "user_id": 1
   },
   {
     "title": "Table of Contents",
     "author": "Machi",
     "content": "Different ways to display navs and table of contents.",
-    "created_on": "date",
-    "user_id": 2
+    "user_id": 1
   },
   {
     "title": "Headers",
     "author": "Hidei",
     "content": "Dynamic headers",
-    "created_on":"date",
-    "user_id": 3 
+    "user_id": 1 
   }
  
 ]
