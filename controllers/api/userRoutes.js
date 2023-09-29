@@ -1,9 +1,11 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-router.post('/', async ({ body }, res) => {
+router.post('/', async (req, res) => {
+  console.log(req);
+
   try {
-    const userData = await User.create(body);
+    const userData = await User.create({username:req.body.username, password:req.body.password});
     console.log(userData);
     req.session.save(() => {
       req.session.user_id = userData.id;
@@ -27,7 +29,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    const validPassword = await userData.checkPassword(req.body.password);
+    const validPassword = userData.checkPassword(req.body.password);
 
     if (!validPassword) {
       res
@@ -38,6 +40,7 @@ router.post('/login', async (req, res) => {
 
     req.session.save(() => {
       req.session.user_id = userData.id;
+      req.session.username = userData.username
       req.session.logged_in = true;
 
       res.json({ user: userData, message: 'You are now logged in!' });

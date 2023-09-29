@@ -37,6 +37,8 @@ sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 })
 
+
+//database not seeding for some reason
 //signup route
 //signup js 
 //logout js
