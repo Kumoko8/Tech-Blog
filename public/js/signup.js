@@ -14,8 +14,8 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace("/")
-        alert("Success!");
+        document.location.replace("/login")
+        alert("Success! Please login with your username and password!");
       } else {
         alert("Sign up failed.");
       }
