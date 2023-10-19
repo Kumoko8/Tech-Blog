@@ -6,7 +6,6 @@ newCommentSection.addEventListener("submit", async (event) => {
 event.preventDefault();
 
 const commentData = new commentData(newCommentSection);
-const 
 
 })
 

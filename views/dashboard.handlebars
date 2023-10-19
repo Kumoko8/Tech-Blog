@@ -1,13 +1,15 @@
-{{log posts}}
+
+<h1>Dashboard</h1>
+
 {{#each posts }}
-<section>
+<div class="post">
     <h2>{{title}}</h2>
-    <h2>{{author}}</h2>
+    <p>Author: {{author}}</p>
     <p>{{content}}</p>
-</section>
+</div>
 {{/each}}
 
-<button type="submit">Create Post</button>
+<a href="/api/posts">Create Post</a>
 
 
 

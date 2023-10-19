@@ -15,6 +15,12 @@ const hbs = exphbs.create({});
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+app.set('views', 'views');
+
+
+app.get('/api/posts', (req, res) => {
+  res.render('newPost', { loggedIn: true });
+});
 
 const sess = {
   secret: 'Super secret secret',
