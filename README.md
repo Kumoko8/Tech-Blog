@@ -6,6 +6,20 @@
  
      This application is for practicing the MVC or model-view-controllers structure which uses models and schema to define database information, controlled by routes that create paths to the information that can be view on html pages or templates  created here by handlebars. I learned a lot about the difference between rendering handlebars templates and executing routes.
 
+## Link to Live Page:
+
+https://tgolden-tech-blog-d53807653a5b.herokuapp.com/
+
+
+## Screenshots
+![Screen Shot 2023-10-19 at 2 16 25 PM](https://github.com/Kumoko8/Tech-Blog/assets/131223690/ad5e154f-cc30-4adb-9e72-66298299c6c8)
+
+![Screen Shot 2023-10-19 at 2 18 29 PM](https://github.com/Kumoko8/Tech-Blog/assets/131223690/9fd36d15-79a1-4b95-9bc9-a49cce4b0c54)
+
+![Screen Shot 2023-10-19 at 2 16 31 PM](https://github.com/Kumoko8/Tech-Blog/assets/131223690/3e279af4-130f-4d63-8502-7a1464ed16fc)
+
+![Screen Shot 2023-10-19 at 2 17 58 PM](https://github.com/Kumoko8/Tech-Blog/assets/131223690/e3e6e976-82b0-42be-8df9-2dce931d17ea)
+
 
    ## Table of Contents
 
